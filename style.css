@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Kumbh+Sans:wght@400;700&family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(227, 47%, 96%);
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: linear-gradient(hsl(273, 75%, 66%) 40%, hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  background-size: contain;  
+}
+
+.big_container {
+  background-color: #fff;
+  position: relative;
+  width: 65%;
+  margin: 8% auto 10%;
+  padding: 4rem  4rem ;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0px 21px 50px rgba(46, 46, 46, 0.596) ;
+}
+
+/* illustrations imgs */
+
+.bg-pattern {
+  position: absolute;
+  z-index: 0;
+  width: 90%;
+  top: -240px;
+  left: -430px;
+  overflow: hidden;
+}
+
+.woman_illu {
+  position: absolute;
+  width: 51%;
+  left: -80px;
+  top: 10%;
+  z-index: 1;
+}
+
+.small_box {
+  position: absolute;
+  width: 11%;
+  left: 12%;
+  top: 42%;
+  z-index: 3;
+}
+/* faq_container */
+.faq_container {
+  margin-left: 55%;
+}
+.faq_container h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.faq_container h2 {
+  font-size: 0.8rem;
+  color: hsl(240, 6%, 50%);
+  font-weight: 600;
+  margin: 5% 0;
+}
+.faq_container p {
+  font-size: 0.8rem;
+  margin-right: 5px;
+  color: hsl(240, 6%, 50%);
+  line-height: 1.5;
+
+}
+
+.faq_container h2:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+/* dropdown */
+.drop1,
+.drop2,
+.drop3,
+.drop4,
+.drop5 {
+  display: none;
+  margin-bottom: 20px;
+}
+.dropdown{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  position: relative;
+}
+.checkbox{
+  position: absolute;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  top: 17px;
+  right: 0;
+  z-index: 1;
+  opacity: 0;
+}
+.QA1,
+.QA2,
+.QA3,
+.QA4,
+.QA5 {
+  border-bottom: 0.5px solid hsl(240, 5%, 91%);
+}
+/* arrow1 */
+.QA1 input:checked[type="checkbox"] ~ div .drop1{
+  display: block;
+}
+.QA1 input:checked[type="checkbox"] ~ .arrow1 .downarrow{
+  transform: rotate(180deg);
+}
+.QA1 input:checked[type="checkbox"] ~ h2{
+  color: black;
+}
+/* arrow2 */
+.QA2 input:checked[type="checkbox"] ~ div .drop2{
+  display: block;
+}
+.QA2 input:checked[type="checkbox"] ~ .arrow2 .downarrow{
+  transform: rotate(180deg);
+}
+.QA2 input:checked[type="checkbox"] ~ h2{
+  color: black;
+}
+/* arrow 3 */
+.QA3 input:checked[type="checkbox"] ~ div .drop3{
+  display: block;
+}
+.QA3 input:checked[type="checkbox"] ~ .arrow3 .downarrow{
+  transform: rotate(180deg);
+}
+.QA3 input:checked[type="checkbox"] ~ h2{
+  color: black;
+}
+/* arrow 4 */
+.QA4 input:checked[type="checkbox"] ~ div .drop4{
+  display: block;
+}
+.QA4 input:checked[type="checkbox"] ~ .arrow4 .downarrow{
+  transform: rotate(180deg);
+}
+.QA4 input:checked[type="checkbox"] ~ h2{
+  color: black;
+}
+/* arrow 5 */
+.QA5 input:checked[type="checkbox"] ~ div .drop5{
+  display: block;
+}
+.QA5 input:checked[type="checkbox"] ~ .arrow5 .downarrow{
+  transform: rotate(180deg);
+}
+.QA5 input:checked[type="checkbox"] ~ h2{
+  color: black;
+}
+
+
+@media  (max-width: 1620px) {
+ 
+  .bg-pattern {
+  position: absolute;
+  z-index: 0;
+  width: 90%;
+  top: -290px;
+  left: -490px;
+  overflow: hidden;
+}
+
+.woman_illu {
+  position: absolute;
+  width: 51%;
+  left: -100px;
+  top: 10%;
+  z-index: 1;
+}
+
+.small_box {
+  position: absolute;
+  width: 11%;
+  left: 12%;
+  top: 40%;
+  z-index: 3;
+}
+}
+@media  (max-width: 1520px) {
+  
+  .bg-pattern {
+  position: absolute;
+  z-index: 0;
+  width: 90%;
+  top: -270px;
+  left: -480px;
+  overflow: hidden;
+}
+
+.woman_illu {
+  position: absolute;
+  width: 51%;
+  left: -100px;
+  top: 10%;
+  z-index: 1;
+}
+
+.small_box {
+  position: absolute;
+  width: 11%;
+  left: 12%;
+  top: 40%;
+  z-index: 3;
+}
+}
+@media  (max-width: 1440px) {
+
+  .bg-pattern {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  top: -285px;
+  left: -490px;
+  overflow: hidden;
+}
+
+.woman_illu {
+  position: absolute;
+  width: 51%;
+  left: -70px;
+  top: 10%;
+  z-index: 1;
+}
+
+.small_box {
+  position: absolute;
+  width: 12%;
+  left: 11.5%;
+  top: 40%;
+  z-index: 3;
+}
+}
+@media  (max-width: 1280px) {
+ 
+  .bg-pattern {
+  position: absolute;
+  z-index: 0;
+  width: 90%;
+  top: -220px;
+  left: -410px;
+  overflow: hidden;
+}
+
+.woman_illu {
+  position: absolute;
+  width: 50%;
+  left: -80px;
+  top: 10%;
+  z-index: 1;
+}
+
+.small_box {
+  position: absolute;
+  width: 11%;
+  left: 12%;
+  top: 35%;
+  z-index: 3;
+}
+}
+
+@media  (max-width: 1024px) {
+
+  .big_container {
+  background-color: #fff;
+  position: relative;
+  width: 75%;
+  margin: 8% auto 10%;
+  padding: 4rem 5rem 8rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  
+}
+  .faq_container {
+  margin-left: 42%;
+}
+.faq_container h1 {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.faq_container h2 {
+  font-size: 1rem;
+  color: hsl(240, 6%, 50%);
+  font-weight: 600;
+  margin: 3% 0;
+}
+
+.faq_container h2:hover {
+  color: hsl(14, 88%, 65%);
+}
+ 
+  .bg-pattern {
+  position: absolute;
+  z-index: 0;
+  width: 90%;
+  top: -210px;
+  left: -388px;
+  overflow: hidden;
+}
+
+.woman_illu {
+  position: absolute;
+  width: 50%;
+  left: -80px;
+  top: 10%;
+  z-index: 1;
+}
+
+.small_box {
+  position: absolute;
+  width: 11%;
+  left: 12%;
+  top: 35%;
+  z-index: 3;
+}
+}
+@media  (max-width: 575px) {
+
+.mobile{
+  margin: 0 0 0 21%;
+  
+}
+  .big_container {
+  background-color: #fff;
+  position: relative;
+  width: 85%;
+  margin: 50% auto 59% ;
+  padding: 0;
+  border-radius: 2rem;
+  overflow: visible;
+  
+}
+  .faq_container {
+  margin:0px;
+  padding: 0px 20px 50px ;
+}
+.faq_container h1 {
+  margin-top: 20%;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.faq_container h2 {
+  font-size: 0.8rem;
+  color: hsl(240, 6%, 50%);
+  font-weight: 600;
+  margin: 4% 0;
+}
+.faq_container p {
+  font-size: 0.79rem;
+  margin-right: 5px;
+}
+.faq_container h2:hover {
+  color: hsl(14, 88%, 65%);
+}
+ 
+  .bg-pattern {
+    position: static;
+    width: 60%;
+}
+
+.woman_illu {
+ 
+  position: absolute;
+  width: 60%;
+  left: 67px;
+  top: -89px;
+  z-index: 1;
+}
+
+.small_box {
+  /* position: static; */
+  position: absolute;
+  width: 14%;
+  left: 27%;
+  top: 160px;
+  z-index: 3;
+}
+}
